@@ -1,1 +1,122 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        form {
+            margin: 20px auto;
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        th[colspan="2"] {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin: 5px;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="2.php" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Form Pembelian Sederhana</th>
+            </tr>
+            <tr>
+                <td><label for="nama">Nama Pembeli</label></td>
+                <td><input type="text" name="nama" id="nama" required></td>
+            </tr>
+            <tr>
+                <td><label for="kodeB">Kode Buku</label></td>
+                <td>
+                    <select name="kodeB" id="kodeB">
+                        <option value="B0001">B0001</option>
+                        <option value="B0002">B0002</option>
+                        <option value="B0003">B0003</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="jumlahBeli">Jumlah Beli</label></td>
+                <td><input type="number" name="jumlahBeli" id="jumlahBeli" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="SAVE">  
+                    <input type="reset" value="RESET">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table>
+        <tr>
+            <th>Kode Buku</th>
+            <th>Judul</th>
+            <th>Pengarang</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>B0001</td>
+            <td>MS Access 2020</td>
+            <td>Dinda</td>
+            <td>47000</td>
+        </tr>
+        <tr>
+            <td>B0002</td>
+            <td>Php & MySql Untuk Orang Awan</td>
+            <td>Peter Parcker</td>
+            <td>64000</td>
+        </tr>
+        <tr>
+            <td>B0003</td>
+            <td>Web Untuk Bisnis</td>
+            <td>Abdul Somad</td>
+            <td>73000</td>
+        </tr>
+    </table>
+</body>
+</html>
